@@ -23,8 +23,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  lottie: ^1.0.1
-  flutter_native_splash: ^1.2.0
+  lottie: ^1.1.0
+  
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   google_fonts: ^2.1.0
@@ -33,15 +33,24 @@ dependencies:
   syncfusion_flutter_charts: ^19.2.47
   intl: ^0.17.0
   expansion_tile_card: ^2.0.0
-  http: ^0.13.3
+  ffi: ^1.1.2
+  web_socket_channel: ^2.1.0 
+  stream_channel: ^2.1.0
+  flutter_local_notifications: ^8.1.1+1
+  simple_animations: ^3.1.1
+  blinking_text: ^1.0.1+2
+  animated_text_kit: ^4.2.1
   
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  flutter_launcher_icons: ^0.9.2
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
+flutter_icons:
+    image_path: "assets/images/logo_2.png" 
+    android: true
+    ios: true  
 # The following section is specific to Flutter.
 flutter:
 
@@ -51,9 +60,10 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-assets:
-  - assets/images
-
+  assets: 
+    - assets/images/
+    
+  
                 
   #   - images/a_dot_ham.jpeg
 
@@ -82,11 +92,6 @@ assets:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
-flutter_native_splash:
-  color: "0xffffff"
-  image: assets/images/logo.png
-  Android: true
-  iOS: true
 
 
 
